@@ -94,7 +94,7 @@ function ImageViewing({
 
   return (
     <Modal
-      transparent={presentationStyle === "overFullScreen"}
+      transparent
       visible={visible}
       presentationStyle={presentationStyle}
       animationType={animationType}
@@ -102,7 +102,6 @@ function ImageViewing({
       supportedOrientations={["portrait"]}
       hardwareAccelerated
     >
-      <StatusBarManager presentationStyle={presentationStyle} />
       <View style={[styles.container, { opacity, backgroundColor }]}>
         <Animated.View style={[styles.header, { transform: headerTransform }]}>
           {typeof HeaderComponent !== "undefined" ? (
