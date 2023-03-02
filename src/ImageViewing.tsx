@@ -94,6 +94,7 @@ function ImageViewing({
 
   return (
     <Modal
+      statusBarTranslucent
       transparent
       visible={visible}
       presentationStyle={presentationStyle}
